@@ -71,10 +71,10 @@ public class ConvertidorUnidTemp extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(71, 71, 71)
                         .addComponent(jLabel2)))
-                .addContainerGap(72, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnConvertirAF)
+                .addGap(200, 200, 200)
+                .addComponent(btnConvertirAF, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(196, 196, 196))
         );
         layout.setVerticalGroup(
@@ -82,14 +82,14 @@ public class ConvertidorUnidTemp extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
+                .addGap(63, 63, 63)
                 .addComponent(jLabel2)
                 .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtCelsius, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(btnConvertirAF)
+                .addComponent(btnConvertirAF, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(109, 109, 109))
         );
 
@@ -102,7 +102,7 @@ try{
         
         double Fahrenheit = celsius * 9/5 + 32;
         
-        JOptionPane.showMessageDialog(this,celsius + " °C convertidos a " + Fahrenheit + " grados Fahrenheit");
+        JOptionPane.showMessageDialog(this,celsius + " °C convertidos serian " + Fahrenheit + " grados Fahrenheit");
 }
 catch(NumberFormatException e){
         JOptionPane.showMessageDialog(this, "ingrese de manera correcta");
