@@ -92,12 +92,18 @@ public class ConvertidorUnidTemp extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnConvertirAFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConvertirAFActionPerformed
-       
+try{
         double celsius =  Double.parseDouble(txtCelsius.getText());
         
         double Fahrenheit = celsius * 9/5 + 32;
         
         JOptionPane.showMessageDialog(this,celsius + " °C convertidos a " + Fahrenheit + " grados Fahrenheit");
+}
+catch(NumberFormatException e){
+        JOptionPane.showMessageDialog(this, "ingrese de manera correcta");
+    
+}
+       
 
     }//GEN-LAST:event_btnConvertirAFActionPerformed
 
